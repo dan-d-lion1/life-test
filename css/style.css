@@ -437,7 +437,7 @@ h1 {
   font-size: 32px;
 }
 h2 {
-  font-size: 28px;
+  font-size: 24px;
 }
 h6 {
   font-weight: 700;
@@ -1394,7 +1394,7 @@ a.bg-video-button-muted {
   font-weight: 700;
   /* text-transform: uppercase; */
   /* letter-spacing: 0.5em; */
-  line-height: 1.8;
+  line-height: 1.4;
   opacity: 0.9;
   color:#006651;
 }
@@ -3980,14 +3980,14 @@ a.logo:hover {
 }
 
 .ci-icon {
-  width: 23px;
-  height: 23px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 10px;
+  top: 3px;
   left: 3px;
   color: #fff;
   text-align: center;
-  line-height: 23px;
+  line-height: 40px;
 }
 .ci-icon:before {
   content: " ";
@@ -4001,7 +4001,7 @@ a.logo:hover {
 
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  border-radius: 2px;
+  border-radius: 50%;
 
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -4020,10 +4020,12 @@ a.logo:hover {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.3em;
+  padding-left: 8px;
 }
 .ci-text {
   font-size: 15px;
   font-weight: 300;
+  padding-left: 8px;
 }
 
 /*
