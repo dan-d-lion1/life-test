@@ -52,8 +52,10 @@
     <div class="page" id="top">
 
         <!-- Navigation panel -->
-        <div data-include="life-header"></div>
+        <!-- <div data-include="life-header"></div> -->
         <!-- End Navigation panel -->
+
+        <iframe src="life-header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
 
 
 
