@@ -22,6 +22,18 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
 
+
+    <script type="text/javascript" src="js/jquery.3.js"></script>
+    <script>
+        $(function () {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+                var file = 'views/' + $(this).data('include') + '.html'
+                $(this).load(file)
+            })
+        })
+    </script>
+
 </head>
 
 <body class="appear-animate">
@@ -40,144 +52,7 @@
     <div class="page" id="top">
 
         <!-- Navigation panel -->
-        <nav class="main-nav light stick-fixed">
-            <div class="full-wrapper relative clearfix">
-                <!-- Logo ( * your text or image into link tag *) -->
-                <div class="nav-logo-wrap local-scroll">
-                    <a href="intro.html" class="logo">
-                        <img src="images/my-images/LIFE-02.png" alt="Company logo" />
-                    </a>
-                </div>
-                <div class="mobile-nav" role="button" tabindex="0">
-                    <i class="fa fa-bars"></i>
-                    <span class="sr-only">Menu</span>
-                </div>
-
-                <!-- Main Menu -->
-                <div class="inner-nav desktop-nav">
-                    <ul class="clearlist">
-
-
-
-
-                        <!-- Item With Sub -->
-                        <li>
-                            <a href="index.html" class="mn-has-sub">Home</i></a>
-
-
-                        </li>
-                        <!-- End Item With Sub -->
-
-
-
-
-                        <!-- Item With Sub -->
-                        <li>
-                            <a href="the-situation.html" class="mn-has-sub">The Situation <i
-                                    class="fa fa-angle-down"></i></a>
-
-                            <!-- Sub -->
-                            <ul class="mn-sub">
-
-                                <li>
-                                    <a href="luekemia-facts.html">Leukemia Facts</a>
-                                </li>
-
-                                <li>
-                                    <a href="types-of-leukemia.html">Types of Leukemia</a>
-                                </li>
-
-                                <li>
-                                    <a href="who-is-at-risk-for-leukemia.html">Who is at risk for leukemia</a>
-                                </li>
-
-                                <li>
-                                    <a href="what-are-symptoms-of-leukemia.html">Symptoms of Leukemia</a>
-                                </li>
-
-                            </ul>
-                            <!-- End Sub -->
-
-                        </li>
-                        <!-- End Item With Sub -->
-
-
-
-
-                        <!-- Item With Sub -->
-                        <li>
-                            <a href="follow-our-work.html" class="mn-has-sub">Follow our work <i
-                                    class="fa fa-angle-down"></i></a>
-
-                            <!-- Sub -->
-                            <ul class="mn-sub">
-
-                                <li>
-                                    <a href="the-gift-of-life.html">The Gift of L.I.F.E.</a>
-                                </li>
-
-                                <li>
-                                    <a href="activities.html">Activities</a>
-                                </li>
-
-                            </ul>
-                            <!-- End Sub -->
-
-                        </li>
-                        <!-- End Item With Sub -->
-
-
-
-
-                        <!-- Item With Sub -->
-                        <li>
-                            <a href="about-us.html" class="mn-has-sub">About us <i class="fa fa-angle-down"></i></a>
-
-                            <!-- Sub -->
-                            <ul class="mn-sub">
-
-                                <li>
-                                    <a href="life-vision.html">L.I.F.E. Vision</a>
-                                </li>
-
-                                <li>
-                                    <a href="the-beginning-of-life.html">The Beginning of L.I.F.E.</a>
-                                </li>
-
-                                <li>
-                                    <a href="life-officials.html">L.I.F.E. Officials</a>
-                                </li>
-
-                                <li>
-                                    <a href="partnering.html">Partnering</a>
-                                </li>
-
-                            </ul>
-                            <!-- End Sub -->
-
-                        </li>
-                        <!-- End Item With Sub -->
-
-
-
-
-                        <!-- Item With Sub -->
-                        <li>
-                            <a href="contact-us.html" class="mn-has-sub">Contact Us</i></a>
-
-                        </li>
-                        <!-- End Item With Sub -->
-
-
-
-
-                    </ul>
-                </div>
-                <!-- End Main Menu -->
-
-
-            </div>
-        </nav>
+        <div data-include="header"></div>
         <!-- End Navigation panel -->
 
 
@@ -283,180 +158,7 @@
 
 
         <!-- Foter -->
-        <footer class="small-section footer pb-60  bg-gray-lighter">
-            <div class="container">
-
-                <!-- Footer Widgets -->
-                <div class="row align-left">
-
-                    <!-- Widget -->
-                    <div class="col-sm-6 col-md-3">
-                        <div class="widget">
-
-                            <h5 class="widget-title font-alt">News & Media Gallery</h5>
-
-                            <div class="widget-body">
-                                <ul class="clearlist widget-menu">
-                                    <li>
-                                        <a href="news.html" title="">News/ Articles <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="events.html" title="">Newsletter/ Events <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="gallery.html" title="">Visit Photo Gallery <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="media.html" title="">View Videos <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- End Widget -->
-
-                    <!-- Widget -->
-                    <div class="col-sm-6 col-md-3">
-                        <div class="widget">
-
-                            <h5 class="widget-title font-alt">What is Leukemia?</h5>
-
-                            <div class="widget-body">
-                                <ul class="clearlist widget-menu">
-                                    <li>
-                                        <a href="luekemia-facts.html" title="">Leukemia facts <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="types-of-leukemia.html" title="">Types of leukemia <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="who-is-at-risk-for-leukemia.html" title="">Who is at risk for leukemia?
-                                            <i class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="what-are-symptoms-of-leukemia.html" title="">Symptoms of leukemia <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- End Widget -->
-
-                    <!-- Widget -->
-                    <div class="col-sm-6 col-md-3">
-                        <div class="widget">
-
-                            <h5 class="widget-title font-alt">Get Involved</h5>
-
-                            <div class="widget-body">
-                                <ul class="clearlist widget-menu">
-                                    <li>
-                                        <a href="fundraise.html" title="">Fundraise <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="follow-our-work.html" title="">Follow our Work <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="educate.html" title="">Educate <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- End Widget -->
-
-                    <!-- Widget -->
-                    <div class="col-sm-6 col-md-3">
-                        <div class="widget">
-
-                            <h5 class="widget-title font-alt">Others</h5>
-
-                            <div class="widget-body">
-                                <ul class="clearlist widget-menu">
-                                    <li>
-                                        <a href="faqs.html" title="">FAQs <i class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="contact-us.html" title="">Contact Us <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="our-hereos.html" title="">Our Hereos <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="activities.html" title="">Activities <i
-                                                class="fa fa-angle-right right"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- End Widget -->
-
-                </div>
-                <!-- End Footer Widgets -->
-
-                <!-- Divider -->
-                <hr class="mt-0 mb-80 mb-xs-40" />
-                <!-- End Divider -->
-
-                <!-- Footer Logo -->
-                <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
-                    <a href="#top"><img src="images/my-images/LIFE-02.png" width="250" height="auto"
-                            alt="Company logo" /><span class="sr-only">Scroll to the top of the page</span></a>
-                </div>
-                <!-- End Footer Logo -->
-
-                <!-- Social Links -->
-                <div class="footer-social-links mb-30 mb-xs-60">
-                    <div class="sr-only">Our profiles in social media:</div>
-                    <a href="https://www.facebook.com/Leukemic-Indigents-Fund-Endowment-LIFE-Inc-156951687670010/wall/"
-                        title="Facebook" target="_blank"><i class="fa fa-facebook"></i> <span class="sr-only">Facebook
-                            profile</span></a>
-                    <a href="https://www.youtube.com/channel/UC6n97azGPfOOHbmGe2ZQziA" title="Behance"
-                        target="_blank"><i class="fa fa-youtube"></i> <span class="sr-only">Behance profile</span></a>
-                </div>
-                <!-- End Social Links -->
-
-                <!-- Footer Text -->
-                <div class="footer-text">
-
-                    <!-- Copyright -->
-                    <div class="footer-copy font-alt">
-                        <a href="#" target="_blank">&copy; Copyright © 2021 Leukemic Indigents Fund Endowment
-                            (L.I.F.E.). All Rights Reserved.</a>
-                    </div>
-                    <!-- End Copyright -->
-
-
-                </div>
-                <!-- End Footer Text -->
-
-            </div>
-
-
-            <!-- Top Link -->
-            <div class="local-scroll">
-                <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
-            </div>
-            <!-- End Top Link -->
-
-        </footer>
+        <div data-include="footer"></div>
         <!-- End Foter -->
 
 
