@@ -288,6 +288,10 @@ video {
   height: auto;
 }
 
+.imglogo{
+  max-width: 140% !important;
+}
+
 /* ==============================
    Page loader
    ============================== */
